@@ -114,6 +114,7 @@
           "import tensorflow as tf",
           "",
           "# Verify that TensorFlow is using GPU.",
+          "# Verify if this comment by Rajeev gets modified",
           "if not tf.test.is_built_with_cuda():",
           "    sys.exit(\"Tensorflow is not built with CUDA support!\")",
           "if len(tf.config.list_physical_devices(\"GPU\")) == 0:",
