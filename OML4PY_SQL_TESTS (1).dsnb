@@ -58,49 +58,8 @@
         "hasTitle" : false,
         "message" : [
           "%script",
-          "select *",
-          "  from table(pyqEval(",
-          "        par_lst => '{\"oml_service_level\":\"MEDIUM\"}',",
-          "        out_fmt => 'JSON',",
-          "        scr_name => 'noinp_ret_df'));"
-        ],
-        "selectedVisualization" : "raw",
-        "visualizationConfig" : null,
-        "hideCode" : false,
-        "hideResult" : false,
-        "hideGutter" : true,
-        "hideVizConfig" : false,
-        "hideInIFrame" : false,
-        "enabled" : true,
-        "forms" : "[]",
-        "result" : {
-          "startTime" : 1709882268477,
-          "endTime" : 1709882302691,
-          "interpreter" : "script.low",
-          "taskStatus" : "SUCCESS",
-          "status" : "SUCCESS",
-          "results" : [
-            {
-              "message" : "NAME   VALUE                                                       \n       [{\"scores\":1,\"PID\":\"pid001\"},{\"scores\":2,\"PID\":\"pid002\"}]   \n\n\n\n---------------------------\n",
-              "type" : "TEXT"
-            }
-          ],
-          "forms" : "[]"
-        },
-        "relations" : [ ],
-        "dynamicFormParams" : "{}"
-      },
-      {
-        "row" : 0,
-        "col" : 0,
-        "sizeX" : 0,
-        "width" : 12,
-        "title" : null,
-        "hasTitle" : false,
-        "message" : [
-          "%script",
           "CREATE TABLE SAMPLE_GRADE2",
-          "  AS (SELECT name, score, finalgrade FROM GRADE WHERE score > 90);"
+          "  AS (SELECT name, score, finalgrade FROM GRADE WHERE score > 90)"
         ],
         "selectedVisualization" : "raw",
         "visualizationConfig" : null,
